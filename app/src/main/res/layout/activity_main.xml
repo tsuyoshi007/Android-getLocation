@@ -8,11 +8,24 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <EditText
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ipEditText"
-        android:hint="@string/EditTextHint"/>
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipEditText"
+            android:hint="@string/EditTextHint"/>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/portEditText"
+            android:hint="@string/port_number"/>
+    </LinearLayout>
 
     <TableLayout
         android:layout_width="wrap_content"

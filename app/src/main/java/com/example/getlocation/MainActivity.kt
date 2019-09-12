@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     var longitude:Double? = 0.0
     var latitude:Double? = 0.0
+    lateinit var ip:String
+    lateinit var port:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,10 +48,8 @@ class MainActivity : AppCompatActivity() {
                 val message = json.toString()
 
 
-                val ip = ipEditText.text.toString()
                 val messageSender = MessageSender(this@MainActivity)
-                messageSender.execute(ip,message)
-
+                messageSender.execute(ip,port,message)
 
             }
 
@@ -66,7 +66,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
         getCoordinateBtn.setOnClickListener {
-            lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,500,0f,locationListener)
+            ip = ipEditText.text.toString()
+            port = portEditText.text.toString()
+            if(ip.isNotEmpty() && port.isNotEmpty()){
+                lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,500,0f,locationListener)
+            }
         }
 
     }
