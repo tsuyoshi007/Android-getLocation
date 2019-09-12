@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">getLocation</string>
+    <string name="get_coordinate">GET COORDINATE</string>
+    <string name="longtitude">LONGTITUDE:</string>
+    <string name="latitude">LATITUDE:</string>
+    <string name="defaultViewValue">0</string>
+    <string name="EditTextHint">Client IP address</string>
+</resources>
