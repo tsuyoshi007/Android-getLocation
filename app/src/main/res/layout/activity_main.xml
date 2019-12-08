@@ -41,8 +41,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/latitudeView"
                 android:text="@string/defaultViewValue"/>
-        </TableRow>
-        <TableRow>
+                    </TableRow>
+                    <TableRow>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -54,11 +54,24 @@
                 android:id="@+id/longitudeView"
                 android:text="@string/defaultViewValue"/>
         </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direction"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/directionView"
+                android:text="@string/defaultViewValue"/>
+        </TableRow>
     </TableLayout>
+
     <Button
-        android:id="@+id/getCoordinateBtn"
+        android:id="@+id/sendDataBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/get_coordinate" />
+        android:text="@string/send_data" />
 
 </LinearLayout>

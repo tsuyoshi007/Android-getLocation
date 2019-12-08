@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">getLocation</string>
-    <string name="get_coordinate">SEND COORDINATE</string>
     <string name="longtitude">LONGTITUDE:</string>
     <string name="latitude">LATITUDE:</string>
     <string name="defaultViewValue">0</string>
     <string name="EditTextHint">Client IP address</string>
     <string name="port_number">Port Number</string>
+    <string name="angle">Angle:</string>
+    <string name="roll">Roll:</string>
+    <string name="pitch">Pitch:</string>
+    <string name="send_data">Send Data</string>
+    <string name="direction">Direction:</string>
 </resources>
